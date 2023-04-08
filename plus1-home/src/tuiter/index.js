@@ -3,7 +3,6 @@ import React from 'react';
 // import Nav from "../nav";
 import ExploreComponent from "./explore";
 import NavigationSidebar from './navigation-sidebar';
-import WhoToFollowList from './who-to-follow-list/index';
 import HomeComponent_a7 from './home';
 
 import whoReducer from "./reducers/who-reducer";
@@ -33,7 +32,7 @@ function Tuiter() {
                 <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                     <NavigationSidebar active="explore" />
                 </div>
-                <div className="col-10 col-md-10 col-lg-7 col-xl-6"
+                <div className="col-10 col-md-10 col-lg-10 col-xl-9"
                     style={{ "position": "relative" }}>
 
                     <Routes>
@@ -51,11 +50,7 @@ function Tuiter() {
                     </Routes>
 
                 </div>
-                {/* <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4"> */}
-                <div className="d-none d-lg-block col-lg-4 col-xl-4 col-xxl-4 ">
 
-                    <WhoToFollowList />
-                </div>
             </div>
         </Provider>
     );

@@ -21,7 +21,7 @@ function App() {
           <Routes>
             <Route path="/*" element={<Labs />} />
             <Route path="/userlogin" element={<HelloWorld />} />
-            <Route path="/user/*" element={<Tuiter />} />
+            <Route path="/plus1/*" element={<Tuiter />} />
 
             {/* <Route path="/todosth" element={<TodosthList />} /> */}
             <Route path="/plus1-home" element={<HomScreenDemo />} />
