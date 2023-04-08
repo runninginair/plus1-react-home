@@ -1,0 +1,117 @@
+/*  A-4 criteria
+
+4 Tuiter (50pts)
+
+For the tuiter section of this assignment you are going to continue implementing
+the Tuiter website started in previous assignments. You will use the Bootstrap and
+Fontawesome CSS libraries to reimplement the Explore screen. Do all your work in
+public/tuiter/explore/index.html and public/tuiter/explore/index.css.
+
+Tuiter's explore screen displays a list of random tuits organized into several
+categories accessible by tabs.
+
+An illustration is shown in the Extra extra large section that follows. The screen,
+as most Tuiter screens we'll work on, have three columns. The column on the left is
+a navigation sidebar with links to various screens throughout Tuiter. The column in
+the middle contains the main content, and the column on the right is another side
+bar with links to other users you might want to follow. The list of tuits in the
+main content, rendered in the center column, are categorized by For You, Trending,
+News, Sports, and Entertainment. The default selected tab is For You. The tabs point
+to for-you.html, trending.html, news.html, sports.html, and entertainment.html
+respectively. You don't need to implement those Webpages. The goal of this section
+is to implement the explore.html Webpage so that it looks and behaves as close as
+possible to how it is described here and displayed in the sections that follow.
+
+As you work on explore.html, the following is a few things worth pointing out,
+
+1. The navigation on the left has both icons and text
+2. The link to the current page is highlighted, e.g., # Explore
+3. There is a small margin at the top of the page, below the navigation links on
+   the left, below the search field, below the tabs
+4. The width of the Tuit button is the same as the navigation bar above it
+5. The main content is centered with equal margins on either side
+6. There's an equal spacing between the three columns
+7. The Follow buttons on the Who to follow side bar on the right are vertically centered
+8. The search field has a magnifying glass rendered within its border, and the text and
+   placeholder start to the right of the icon
+9. The image at the top of the middle column has a large white text overlayed on top of
+   it, but positioned in the bottom left corner of the image
+10. The cog on the right of the search field is vertically aligned with the search field
+11. The search field has rounded corners
+12. The borders of the avatar images under Who to follow are circles. Do not use circle
+    images. Use rounded corners instead
+13. Use images similar to the ones shown. Use the text shown as a hint to find images on
+    the Web
+14. Use the exact text shown
+*/
+
+/* a4 -- Overriding Bootstrap icon style */
+
+.bi-three-dots.bi-three-dots-red {
+    color: white;
+    background: black;
+    max-height: min-content;
+    border-radius: 1em;
+}
+
+.btn-primary.override-bs {
+    border-radius: 2em;
+}
+
+.btn-primary.override-bs2 {
+    height: 32px;
+    width: 78px;
+    border-radius: 16px;
+}
+
+.wd-avater {
+    max-height: 42px;
+    max-width: 42px;
+    fill-rule: nonzero;
+    border-radius: 21px;
+}
+
+.wd-icon-size-m {
+    font-size: 1.2em;
+}
+
+.form {
+    position: relative;
+}
+
+.form .fa-search {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    color: #505761;
+}
+
+.form span {
+    position: absolute;
+    right: 17px;
+    top: 6px;
+    padding: 1px;
+    border-left: 1px solid #d1d5db;
+}
+
+.form-input {
+    height: 42px;
+    text-indent: 48px;
+    border-radius: 21px;
+}
+
+.form-input:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.wd-fg-color-gray {
+    color: grey;
+    font-weight: normal; 
+}
+
+.wd-content-img {
+    max-width: 76px;
+    max-height: 76px;
+    border-radius: 8px;
+}

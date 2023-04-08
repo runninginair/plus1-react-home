@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- <style>
+        p {
+            background-color: blue;
+            color: white;
+        }
+    </style> -->
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- 3.1 Styling a document's look and feel (10pts) -->
+
+    <!-- 3.1.1 Styling elements with the style attribute (3pts) -->
+    <div>
+        <!-- An HTML element's style attribute can configure the look and feel of the element
+            by changing the values of its style properties as shown below -->
+        <!-- <element style="property1: value1; property2: value2">
+        element body
+        </element> -->
+        <h1>Cascading Style Sheet (CSS)</h1>
+        <h2>3.1 Style attribute and tag (10pts)</h2>
+        <h3>3.1.1 Style attribute</h3>
+        <p style="background-color: blue; color: white">
+            Style attribute allows configuring look and feel right on the element. Although it's
+            very convenient it is considered bad practice and you should avoid using the style attribute
+        </p>
+        <!-- In the exercise above we styled the paragraph element with its style attribute. 
+            We changed the color of its background by setting the background-color property
+            to blue and also changing the foreground color to white by setting the color
+            property to white. There are 100s of style attributes of which we'll cover the
+            most relevant. -->
+    </div>
+
+    <!-- 3.1.2 Styling documents with the style tag (3pts) -->
+    <div>
+        <!-- A slightly better way to configure the look and feel of a Web page is to declare CSS rules in the <style> tag in the <header> and then refer to the tag by their selector, e.g., name, ID, or class. It's better because you can control the style of a whole page from a central place instead of dealing with individual elements. To practice using the style tag, copy and paste the highlighted style tag below at the end of the head tag as shown. -->
+
+        <!-- <style>
+       selector1 {
+           property1: value1;
+           property2: value2;
+       }
+    </style> -->
+        <h3>3.1.2 Style tag</h3>
+        <p>
+            A slightly better way to configure look and feel is to declare CSS rules in the
+            STYLE tag in the header and then refer to the tag by their name, ID, or class
+            This paragraph's style is set by a rule referring to the P tags
+        </p>
+    </div>
+
+    <!-- 3.1.3 Linking CSS styling documents with the link tag (4pts) -->
+    <div>
+        <!-- Although the style tag is slightly better than the style attributes, styling an
+        entire website will entail editing many style tags in their HTML documents.
+        Instead of changing styles inside many HTML documents, it is a best practice to
+        do all styling configuration in separate CSS files and then link the files from
+        the HTML document with the link tag. To practice using the link tag create a
+        brand new file called index.css in the same directory of the index.html document,
+        and copy the following content. -->
+        <h3>3.1.3 Link tag</h3>
+        <p>
+            The best way to apply CSS rules is to declare
+            them in a separate CSS file and load it with
+            the LINK tag. Always use this method.
+        </p>
+    </div><br />
+
+    <!-- 3.2 Selecting content to style with selectors (10pts) -->
+    <h2>3.2 Selecting content to style with selectors (10pts)</h2>
+    <!-- 3.2.1 Selecting content with ID selectors (3pts) -->
+    <div>
+        <!-- The CSS rules in previous exercises styled all paragraphs at once by using the
+        name of the tag p and then specifying the style property values. Instead of
+        changing the look and feel of all the elements of the same name, e.g., p, we can
+        refer to a specific element by their ID, an attribute specifying a unique identifier.
+        To practice using ID selectors, in index.css, comment out the highlighted paragraph
+        CSS rule as shown and add the two CSS rules referring to paragraphs with IDs
+        id-selector-1 and id-selector-2. -->
+        <h3>3.2.1 ID selectors</h3>
+        <p id="id-selector-1">
+            Instead of changing the look and
+            feel of all the elements of the
+            same name, e.g., P, we can refer
+            to a specific element by its ID
+        </p>
+        <p id="id-selector-2">
+            Here's another paragraph using a
+            different ID and a different look
+            and feel
+        </p>
+    </div>
+
+    <!-- 3.2.2 Selecting content with class selectors (3pts) -->
+    <div>
+        <!-- Instead of using IDs to refer to specific elements, you can use an element's class
+        attribute instead, or a combination of both. Class selectors can be used just like
+        ID selectors if you keep them unique, but can also be used to apply the same style
+        to several elements, even if they are different types of elements. We will be using
+        class selectors exclusively from now on. To practice using class selectors, copy the
+        CSS rule below into index.css, and the HTML at the end of index.html. -->
+        <h3>3.2.2 Class selectors</h3>
+        <p class="class-selector">
+            Instead of using IDs to refer to elements, you can use an element's CLASS attribute</p>
+        <h4 class="class-selector">
+            This heading has same style as paragraph above</h4>
+    </div>
+
+
+    <!-- 3.2.3 Selecting content based on the document structure (4pts) -->
+    <!-- Selectors can be combined to refer to elements in particular places in the document.
+        A set of selectors separated by a space can refer to elements in a hierarchy.
+        For instance: .selector1 .selector2 { … } refers to an element whose class is
+        .selector2 and is inside some descendant of another element whose class is .selector1.
+        If we use ">" instead to separate the classes, then we can establish a direct
+        parent/child relationship. To practice selecting elements using a set of selectors,
+        copy the following content in index.html -->
+    <!-- this is parent element with selector .selector-1 -->
+    <div class="selector-1">
+        <h3>3.2.3 Document structure selectors</h3>
+        <!-- .selector-2 is a direct child of .selector-1 -->
+        <div class="selector-2">
+            Selectors can be combined to refer elements in particular places in the document
+            <!-- .selector-3 is a descendant of .selector-1 and a direct child of .selector-2 -->
+            <p class="selector-3">
+                This paragraph's red background is referenced as
+                <br />.selector-2 .selector3<br />
+                meaning the descendant of some ancestor.<br />
+                <!-- .selector-4 is a descendant of .selector-1 and .selector-2 and a direct child of .selector-3 -->
+                <span class="selector-4">Whereas this span is a direct child of its parent</span><br />
+                You can combine these relationships to create specific styles
+                depending on the document structure
+            </p>
+            <!-- <p class="selector-1">This paragraph is selector-1</p>
+                <p class="selector-2">This paragraph is selector-2</p>
+                <p class="selector-3">This paragraph is selector-3</p>
+                <p class="selector-4">This paragraph is selector-4</p> -->
+        </div>
+    </div><br />
+
+    <!-- 3.3 Styling color (5pts) -->
+    <div>
+        <!-- 3.3.1 Styling the foreground color (2.5pts)
+        Foreground colors can be configured using the CSS color property as follows
+
+    .some-css-selector {        /* selects some DOM element    */
+    color: blue;             /* sets color property to blue */
+    }
+
+        Colors can be defined as follows
+        * As strings, e.g., white, red, blue, etc
+        * As hexadecimals, e.g., #ABCDEF
+        * As RGB, e.g., rgb(12, 34, 56) -->
+
+        <h2>3.3 Colors</h2>
+        <h3 class="fg-color-blue">3.3.1 Foreground color</h3>
+        <p class="fg-color-red">
+            The text in this paragraph is red but
+            <span class="fg-color-green">this text is green</span>
+        </p>
+    </div>
+
+    <!-- 3.3.2 Styling the background color (2.5pts) -->
+    <div>
+        <!-- To practice working with background colors, copy the CSS rules shown below into index.css and the HTML code into index.html. Confirm the browser renders as shown. -->
+        <h3 class="bg-color-blue fg-color-white">3.3.2 Background color</h3>
+        <p class="bg-color-red fg-color-black">
+            This background of this paragraph is red but
+            <span class="bg-color-green fg-color-white">
+                the background of this text is green and the foreground white</span>
+        </p>
+    </div><br />
+
+    <!-- 3.4 Styling the box model (10pts) -->
+    <div>
+        <!-- 3.4.1 Styling borders (2.5pts)
+        Use CSS border properties to configure the look and feel of the border around content.
+        Here's a sample of the properties that can be configured. -->
+        <!-- .some-selector {                           /* configure border with several properties*/
+            border-width: 10px;                         /* border's width. Can also provide per border*/
+            border-style: solid|dotted|dashed|double;   /* the style of the border*/
+            border-color: red | blue ...;               /* the color of the border*/
+        } -->
+        <h2>3.4 Borders</h2>
+        <p class="border-fat border-red border-solid">
+            Solid fat red border</p>
+        <p class="border-thin border-blue border-dashed">
+            Dashed thin blue border</p>
+    </div>
+
+    <!-- 3.4.2 Stying margins and paddings (5pts) -->
+    <div>
+        <h2>3.4.2 Padding</h2>
+        <div class="padded-top-left border-fat border-red border-solid bg-color-yellow">
+            <h3>Padded top Left</h3>
+            Padded top left
+        </div>
+        <div class="padded-bottom-right border-fat border-blue border-solid bg-color-yellow">
+            Padded bottom right
+        </div>
+        <div class="padding-fat border-fat  border-yellow border-solid bg-color-blue fg-color-white">
+            Padded all around
+        </div>
+
+        <h2>Margins</h2>
+        <div class="margin-bottom padded-top-left border-fat border-red border-solid bg-color-yellow">
+            Margin bottom</div>
+        <div class="margin-right-left  padded-bottom-right border-fat border-blue border-solid bg-color-yellow">
+            Margin left right
+        </div>
+        <div class="margin-all-around padding-fat border-fat border-yellow border-solid bg-color-blue fg-color-white">
+            Margin all around
+        </div>
+    </div>
+
+    <!-- 3.4.3 Stying corners (2.5pts) -->
+    <!-- You can configure the corners of element borders to be rounded. Either all of them at once or specific corners. You can do this by configuring a border's radius. To practice rounding some corners, copy the CSS and HTML below into index.css and index.html and confirm the browser renders as shown. -->
+    <div>
+        <h3>3.4.3 Rounded corners</h3>
+        <p class="rounded-corners-top border-thin border-blue border-solid padding-fat">
+            Rounded corners on the top
+        </p>
+        <p class="rounded-corners-bottom border-thin border-blue border-solid padding-fat">
+            Rounded corners at the bottom
+        </p>
+        <p class="rounded-corners-all-around border-thin border-blue border-solid padding-fat">
+            Rounded corners all around
+        </p>
+        <p class="rounded-corners-inline border-thin border-blue border-solid padding-fat">
+            Different rounded corners
+        </p>
+    </div>
+
+    <!-- 3.5 Styling dimensions (3pts) -->
+    <div>
+        <h2>3.5 Dimension</h2>
+        <div class="dimension-portrait bg-color-yellow">
+            Portrait
+        </div>
+        <div class="dimension-landscape bg-color-blue
+                    fg-color-white">
+            Landscape
+        </div>
+        <div class="dimension-square bg-color-red">
+            Square
+        </div>
+    </div>
+
+    <!-- 3.6 Styling position (12pts) -->
+    <!-- You can configure an element's position with the position property. The property has many possible values, but we'll explore relative, position, and static. -->
+    <!-- 3.6.1 Styling relative position (2pts) -->
+    <div>
+        <h2>3.6 Position</h2>
+        <h3>3.6.1 Relative</h3>
+        <div class="bg-color-yellow
+                    dimension-portrait">
+            <div class="pos-relative-nudge-down-right">
+                Portrait
+            </div>
+        </div>
+
+        <div class="pos-relative-nudge-up-right
+                    bg-color-blue fg-color-white
+                    dimension-landscape">
+            Landscape
+        </div>
+
+        <div class="bg-color-red dimension-square">
+            Square
+        </div>
+    </div>
+
+    <!-- 3.6.2 Styling absolute position (2pts) -->
+    <h3>3.6.2 Absolute position</h3>
+    <div class="pos-relative">
+        <div class="pos-absolute-10-10
+                    bg-color-yellow
+                    dimension-portrait">
+            Portrait
+        </div>
+        <div class="pos-absolute-50-50
+                    bg-color-blue fg-color-white
+                    dimension-landscape">
+            Landscape
+        </div>
+        <div class="pos-absolute-120-20
+                    bg-color-red
+                    dimension-square">
+            Square
+        </div>
+    </div><br /><br /><br /><br /><br /><br /><br />
+
+    <!-- 3.6.3 Styling fixed position (1pt) -->
+    <div>
+        <!-- Setting position property to fixed allows setting the element relative to the window.
+        That means that if you scroll the content of the page, the element will not scroll with it.
+        To practice setting element's fixed position, copy the CSS and HTML below into index.css
+        and index.html and confirm the browser renders as shown. Your display may be different
+        depending on the actual size of the screen and scrolling. -->
+        <h3>3.6.3 Fixed position</h3>
+        Checkout the blue square that says "Fixed position" stuck all the way
+        on the right and half way down the page. It doesn't scroll with the
+        rest of the page. Its position is "Fixed".
+
+        <div class="pos-fixed  dimension-square bg-color-blue fg-color-white">
+            Fixed position
+        </div>
+    </div>
+
+    <!-- 3.6.4 Styling z-index (1pt) -->
+    <!-- When the browser renders content declared in HTML documents, it calculates positions and dimensions so every element has a dedicated rectangle on the window. Typically elements don't fall on top of each other. When you start moving elements with position, then overlapping elements are possible. By default elements are rendered in the order declared in HTML documents. Elements declared later render on top of elements declared earlier. The z-index CSS property overrides this behavior. Default value of z-index is auto, which corresponds to 0. Increasing z-index can make elements render later, or on top of, others.  -->
+    <h2>3.6.4 Z index</h2>
+    <div class="pos-relative">
+        <div class="pos-absolute-10-10 bg-color-yellow dimension-portrait">
+            Portrait</div>
+        <div class="zindex-bring-to-front
+                    pos-absolute-50-50 bg-color-blue fg-color-white dimension-landscape">
+            Landscape</div>
+        <div class="pos-absolute-120-20 bg-color-red dimension-square">
+            Square</div>
+    </div><br /><br /><br /><br /><br /><br /><br />
+
+    <!-- 3.6.5 Floating content (2pts) -->
+    <h2>3.6.5 Float</h2>
+    <div>
+        <div class="float-left
+                    dimension-portrait
+                    bg-color-yellow">
+            Yellow</div>
+        <div class="float-left
+                    dimension-portrait
+                    bg-color-blue fg-color-white">
+            Blue</div>
+        <div class="float-left
+                    dimension-portrait
+                    bg-color-red">
+            Red</div>
+        <img class="float-right"
+            src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg" />
+        <div class="float-done"></div>
+    </div>
+
+    <!-- 3.6.6 Laying out content in a grid (4pts) -->
+    <h2>3.6.6 Grid layout</h2>
+    <div class="grid-row">
+        <div class="grid-col-half-page bg-color-yellow">
+            <h3>Left half</h3>
+        </div>
+        <div class="grid-col-half-page bg-color-blue
+                    fg-color-white">
+            <h3>Right half</h3>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-col-third-page bg-color-green
+                    fg-color-white">
+            <h3>Left third</h3>
+        </div>
+        <div class="grid-col-two-thirds-page bg-color-red
+                    fg-color-white">
+            <h3>Right two thirds</h3>
+        </div>
+    </div>
+
+    <div class="grid-row">
+        <div class="grid-col-left-sidebar bg-color-yellow">
+            <h3>Side bar</h3>
+            <p>This is the left sidebar</p>
+        </div>
+        <div class="grid-col-main-content bg-color-blue
+                    fg-color-white">
+            <h3>Main content</h3>
+            <p>This is the main content. This is the main content. This is the main content. </p>
+        </div>
+        <div class="grid-col-right-sidebar bg-color-green
+                    fg-color-white">
+            <h3>Side bar</h3>
+            <p>This is the right sidebar</p>
+        </div>
+    </div><br /><br /><br /><br />
+
+    <!-- 5 Challenge (50pts required for graduate students) -->
+    <div><br /><br /><br /><br />
+        <h2>5 Rotations</h2>
+        <h3>Rotating a paragraph</h3>
+        <p class="rotate-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+            qui officia deserunt mollit anim id est laborum</p>
+    </div>
+
+    <h3>5.1 Rotating a list</h3>
+    <ul class="rotate-list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h3>5.2 Rotating list items</h3>
+    <ul class="rotate-list-items">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <h3>5.3 Rotating an image</h3>
+    <img class="rotate-image" width="400px"
+        src="https://s14085.pcdn.co/wp-content/uploads/2019/10/dowjones_chart_100_years_20200327.png" />
+
+    <h3>Rotating another image</h3>
+    <img class="rotate-image" height="200px" src="../../images/Rybakina_Elena.jpeg" />
+
+    <h3>5.4 Rotating a table</h3>
+    <br /><br />
+    <table border="1" class="rotate-table">
+        <tr>
+            <td>Return rate</td>
+            <td>Monthly contributions</td>
+            <td>Balance after 40 years</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>250</td>
+            <td>372,141.15</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>500</td>
+            <td>744,282.29</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>1000</td>
+            <td>1,488,564.58</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>250</td>
+            <td>621,379.12</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>500</td>
+            <td>1,242,758.23</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>1000</td>
+            <td>2,485,516.46</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>250</td>
+            <td>1,398,651.85</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>500</td>
+            <td>2,797,303.70</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>1000</td>
+            <td>5,594,607.40</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>250</td>
+            <td>3,251,260.21</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>500</td>
+            <td>6,502,520.42</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>1000</td>
+            <td>13,005,040.83</td>
+        </tr>
+    </table>
+
+
+    <h3>5.5 Linear gradients</h3>
+    <p class="gradients-linear">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit.</p>
+
+    <p class="gradients-linear-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit.</p>
+
+
+
+    <h3>5.5.1 Radial gradients</h3>
+    <p class="gradients-radial">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit.</p>
+
+    <p class="gradients-radial-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit.</p>
+
+
+    <h3>5.5.2 Positioning radial gradients</h3>
+    <p class="gradients-positioned">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit.</p>
+
+    <p class="gradients-positioned-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit.</p>
+
+
+
+    <h2>5.6 Animations</h2>
+    <h3> 5.6.1 Keyframe animations</h3>
+    <p class="animation-keyframes">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit.</p>
+
+    <p class="animation-keyframes-2">
+        Use your own paragraph, sizes, keyframes, colors, and font sizes.
+        In your own examples, play around with the following attributes
+        animation-iteration-count: infinite;
+        animation-direction: alternate; </p>
+
+
+    <h2>5.7 Flex (10pts) </h2>
+    <div class="flex-container-0">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br />Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3
+        </div>
+    </div><br />
+
+    <div class="flex-container-1">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br />Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3
+        </div>
+    </div><br />
+
+    <div class="flex-container-2">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br />Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3
+        </div>
+    </div><br />
+
+    <div class="flex-container-3">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br />Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3
+        </div>
+    </div><br />
+
+    <div class="flex-container-4">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br />Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3
+        </div>
+    </div><br />
+
+    <div class="flex-container-5">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br />Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3
+        </div>
+    </div><br />
+
+    <h3>5.7.2 Aligning flex elements vertically</h3>
+    <div class="flex-container-6">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br />Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3
+        </div>
+    </div><br />
+
+    <div class="flex-container-7">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br />Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3
+        </div>
+    </div><br />
+
+    <div class="flex-container-8">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 2 Box 2<br />Box 2 Box 2
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3<br />Box 3 Box 3 Box 3
+        </div>
+    </div><br />
+
+    <div class="flex-container-19">
+        <div class="flex-box flex-box-1">Box 1</div>
+        <div class="flex-box flex-box-2">
+            Box 1 Box 2<br />Box 3 Box 4
+        </div>
+        <div class="flex-box flex-box-3">
+            Box 1 Box 2 Box 3<br />Box 4 Box 5 Box 6<br />Box 7 Box 8 Box 9
+        </div>
+    </div><br />
+
+
+    <!-- 5.8 Media queries (5pts) -->
+    <div>
+
+        <h2 class="media-query-2">5.8 Media queries</h2>
+        <p class="media-query">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <p class="media-query-2">
+            Create examples of your own that define 3 different media rules for similar screen sizes.
+            Define a couple of elements, e.g., heading, paragraph, divs, and change their style as
+            the user resizes the screen</p>
+
+    </div>
+
+
+</body>
+
+</html>

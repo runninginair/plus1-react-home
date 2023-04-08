@@ -1,0 +1,58 @@
+[
+    {
+        "_id": 1001,
+        "name": "home",
+        "title": "Home",
+        "href": "/tuiter/home",
+        "icon": "bi bi-house-heart-fill"
+    },
+    {
+        "_id": 1002,
+        "name": "explore",
+        "title": "Explore",
+        "href": "/tuiter/explore",
+        "icon": "bi bi-hash"
+    },
+    {
+        "_id": 1003,
+        "name": "notificaion",
+        "title": "Notification",
+        "href": "#",
+        "icon": "bi bi-bell"
+    },
+    {
+        "_id": 1004,
+        "name": "message",
+        "title": "Messages",
+        "href": "#",
+        "icon": "bi bi-envelope"
+    },
+    {
+        "_id": 1005,
+        "name": "bookmarks",
+        "title": "Bookmarks",
+        "href": "#",
+        "icon": "bi bi-bookmarks"
+    },
+    {
+        "_id": 1006,
+        "name": "top articles",
+        "title": "Top Articles",
+        "href": "#",
+        "icon": "bi bi-fire"
+    },
+    {
+        "_id": 1007,
+        "name": "profile",
+        "title": "Profile",
+        "href": "../profile.html",
+        "icon": "bi bi-person-lines-fill"
+    },
+    {
+        "_id": 1008,
+        "name": "more",
+        "title": "More",
+        "href": "#",
+        "icon": "bi bi-three-dots"
+    }
+]

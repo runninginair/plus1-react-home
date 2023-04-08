@@ -1,0 +1,58 @@
+[
+    {
+        "_id": 234,
+        "topic": "Space",
+        "userName": "SpaceX",
+        "time": "2h",
+        "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonistsbeing building Mars Base 1",
+        "image": "Spacex_logo_big.jpeg",
+        "liked": true,
+        "replies": 123,
+        "retuits": 432,
+        "likes": 2345,
+        "handle": "@spacex",
+        "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars."
+    },
+    {
+        "_id": 345,
+        "topic": "Space",
+        "userName": "Tesla",
+        "time": "5h",
+        "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
+        "image": "Tesla_logo_500x500.jpeg",
+        "liked": false,
+        "replies": 1233,
+        "retuits": 1432,
+        "likes": 1314,
+        "handle": "@spacex",
+        "tuit": "Autopilot is an advanced driver assistance system that enhances safety and convenience behind the wheel. When used properly, Autopilot reduces your overall workload as a driver. Each new Tesla vehicle is equipped with eight external cameras and powerful vision processing to provide an additional layer of safety."
+    },
+    {
+        "_id": 456,
+        "topic": "Space",
+        "userName": "NASA",
+        "title": "NASA Prepares for Historic Asteroid Sample Delivery on Sept. 24 ",
+        "time": "6h",
+        "image": "NASA_400x400.jpeg",
+        "liked": true,
+        "replies": 172,
+        "retuits": 232,
+        "likes": 425,
+        "handle": "@nasa",
+        "tuit": "After seven years in space, including a nail-biting touchdown on Bennu in 2020 to gather up dust and rocks, NASA’s intrepid OSIRIS-REx spacecraft is about to face one of its biggest challenges yet: deliver an asteroid sample to Earth while protecting it from heat, vibrations, and earthly contaminants. "
+    },
+    {
+        "_id": 567,
+        "topic": "Energy",
+        "userName": "Tesla",
+        "title": "Mobile Software Engineering Internship (Fall 2023) ",
+        "time": "4d",
+        "image": "Tesla_logo_red.avif",
+        "liked": false,
+        "replies": 887,
+        "retuits": 788,
+        "likes": 778,
+        "handle": "@tesla",
+        "tuit": "Tesla is seeking passionate mobile engineering students who thrive in a fast-paced environment and want to apply CS concepts to real world projects. Our Mobile Engineering team is responsible for Tesla’s app which includes exciting features such as: smart summon, vehicle controls, keyless entry, and sentry mode. "
+    }
+]

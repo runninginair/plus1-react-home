@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head>
+   <meta charset="UTF-8">
+   <title>Lab3 CSS</title>
+</head> -->
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link href="../styles.css" rel="stylesheet" />
+
+    <link href="index_0.css" rel="stylesheet" />
+
+    <title>a4 Tuiter</title>
+
+</head>
+
+<body>
+    <!-- <div class="container-fluid mt-4"> -->
+    <div class="container-fluid row mt-2">
+
+        <div class="col-xxl col-xl col-lg-1 col-md-1 col-sm-1 col-1 cols list-group ms-2 me-1">
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="fab fa-twitter"></i></a>
+
+            <!-- <a href="../home.html" class="list-group-item list-group-item-action">
+                <div class="row">
+                    <div class="col-xl-2 col-l-auto">
+                        <i class="bi bi-house-heart-fill"></i> 
+                    </div>
+                    <div class="col-xl-7 d-sm-none d-md-none d-lg-none d-xl-block d-xxl-block">
+                        <span> Home </span>
+                    </div>
+                </div>
+            </a> -->
+
+            <a href="../home.html" class="list-group-item list-group-item-action">
+                <i class="bi bi-house-heart-fill"></i>
+                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Home</span>
+
+            </a>
+
+            <a href="../explore/index.html" class="list-group-item list-group-item-action active">
+                <i class="bi bi-hash"></i>
+                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Explore</span>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi bi-bell-fill"></i>
+                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Notification</span>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi bi-envelope-at-fill"></i>
+                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Messages</span>
+            </a>
+
+            <a href="../bookmarks/index.html" class="list-group-item list-group-item-action">
+                <i class="bi bi-bookmark-fill"></i>
+                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Bookmarks</span>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <i class="bi bi-list-check"></i>
+                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Lists</span>
+            </a>
+
+            <a href="../profile.html" class="list-group-item list-group-item-action">
+                <i class="bi bi-person-fill"></i>
+                <span class="d-none d-xl-inline-block d-xxl-inline-block"> Profile</span>
+            </a>
+
+            <a href="#" class="list-group-item list-group-item-action">
+                <span>
+                    <i class="bi bi-three-dots bi-three-dots-red"></i>
+                </span>
+                <span class="d-none d-xl-inline-block d-xxl-inline-block"> More</span>
+            </a><br />
+
+            <button class="btn btn-primary override-bs">
+                Tweet</button><br />
+
+            <!-- <a href="#"
+            class="list-group-item list-group-item-action disabled"
+            tabindex="-1"
+            aria-disabled="true">Ender's Game</a> -->
+        </div><br />
+
+        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-10 col-sm-10 col-10 d-inline me-2">
+            <!-- Search Bar -->
+            <div class="row">
+                <div class="col row">
+
+                    <div class="col-11">
+                        <div class="form">
+                            <i class="fa fa-search" style="font-size: 1.2em;"></i>
+                            <input type="text" class="form-control form-input" placeholder="Search Tuiter...">
+                            <span class="left-pan"></span>
+                        </div>
+                    </div>
+                    <div class="col-1 float-right">
+                        <a href="#">
+                            <i class="fas fa-cog fa-spin mt-1" style="font-size: 2em; color: #0d6efd;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-1">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="for-you.html"> For you </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="entertainment.html" tabindex="-1">Entertainment</a>
+                    </li>
+                </ul><br />
+
+
+                <!-- <span class="list-group-item list-group-item-action ">
+                <div class="ytp-cued-thumbnail-overlay-image" style="background-image: url(&quot;https://i.ytimg.com/vi_webp/7CZTLogln34/maxresdefault.webp&quot;);"></div>
+            </span> -->
+
+                <a href="https://www.spacex.com/vehicles/starship/" class="list-group-item-action active">
+                    <img src="../../images/Starbase-Starship-Gazer-SpaceX.jpeg" class="img-fluid">
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="row">
+                        <div class="col-10">
+                            <span class="wd-fg-color-gray"> Web Development</span><br />
+                            <b> ReactJS </b><i class="bi bi-check-circle-fill"></i>
+                            <span class="wd-fg-color-gray"> - 2h </span><br />
+                            <b>React (also known as React.js or ReactJS) is a free and open-source front-end
+                                JavaScript library on UI components. </b>
+                        </div>
+                        <div class="col-2">
+                            <img src="../../images/ReactJS_logo.png" class="wd-content-img float-end">
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="row">
+                        <div class="col-10">
+                            <b> JavaScript </b><i class="bi bi-check-circle-fill"></i>
+                            <span class="wd-fg-color-gray"> - 2h </span><br />
+                            <b>JavaScript (JS) is a programming language that is one of the core
+                                technologies of the World Wide Web, alongside HTML and CSS. </b><br />
+                            <span class="wd-fg-color-gray"> 123K Tweets</span><br />
+
+                        </div>
+                        <div class="col-2">
+                            <img src="../../images/JavaScript_logo.png" class="wd-content-img float-end">
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="row">
+                        <div class="col-10">
+                            <span class="wd-fg-color-gray"> Web Development</span><br />
+                            <b> JQuery </b><br />
+                            <span class="wd-fg-color-gray"> 123K Tweets</span><br />
+
+                        </div>
+                        <div class="col-2">
+                            <img src="../../images/JQuery_logo.png" class="wd-content-img float-end">
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action">
+                    <div class="row">
+                        <div class="col-10">
+                            <span class="wd-fg-color-gray"> Web Development</span><br />
+                            <b> NodeJS </b><i class="bi bi-check-circle-fill"></i>
+                            <span class="wd-fg-color-gray"> - 2h </span><br />
+                            <span class="wd-fg-color-gray"> 123K Tweets</span><br />
+
+                        </div>
+                        <div class="col-2">
+                            <img src="../../images/NodeJS_logo_simple.png" class="wd-content-img float-end">
+                        </div>
+                    </div>
+                </a>
+
+            </div><br />
+        </div>
+
+        <div class="col-xxl-4 col-xl-4 col-lg-4 list-group ms-2 me-2
+            d-none d-sm-none d-md-none d-lg-inline d-xl-inline d-xxl-inline">
+
+            <span class="list-group-item list-group-item-action" type="font-size: 1.2em"><b>Who to follow<b></span>
+
+            <a href="../home.html" class="list-group-item list-group-item-action">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="../../images/Java_logo.png" class="wd-avater">
+                    </div>
+                    <div class="col-6">
+                        Java <i class="bi bi-check-circle-fill"></i><br />
+                        <span class="wd-fg-color-gray">@Java</span>
+                    </div>
+                    <div class="col-2 mt-2 me-2">
+                        <button class="btn-primary override-bs2">Follow</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="../home.html" class="list-group-item list-group-item-action">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="../../images/relativity_space_logo.avif" class="wd-avater">
+                    </div>
+                    <div class="col-6">
+                        Relativity Space <i class="bi bi-check-circle-fill"></i><br />
+                        <span class="wd-fg-color-gray">@relativityspace</span>
+                    </div>
+                    <div class="col-2 mt-2 me-2 float-end">
+                        <button class="btn-primary override-bs2">Follow</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="../home.html" class="list-group-item list-group-item-action">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="../../images/virgin_logo.svg" class="wd-avater">
+                    </div>
+                    <div class="col-6">
+                        Virgin Galactic <i class="bi bi-check-circle-fill"></i><br />
+                        <span class="wd-fg-color-gray">@virgingalactic</span>
+                    </div>
+                    <div class="col-2 mt-2 me-2 float-end">
+                        <button class="btn-primary override-bs2">Follow</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="../home.html" class="list-group-item list-group-item-action">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="../../images/NASA_400x400.jpeg" class="wd-avater">
+                    </div>
+                    <div class="col-6">
+                        NASA <i class="bi bi-check-circle-fill"></i><br />
+                        <span class="wd-fg-color-gray">@NASA</span>
+                    </div>
+                    <div class="col-2 mt-2 me-2 float-end">
+                        <button class="btn-primary override-bs2">Follow</button>
+                    </div>
+                </div>
+            </a>
+
+            <a href="../home.html" class="list-group-item list-group-item-action">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="../../images/Tesla_logo_500x500.jpeg" class="wd-avater">
+                    </div>
+                    <div class="col-6">
+                        Tesla <i class="bi bi-check-circle-fill"></i><br />
+                        <span class="wd-fg-color-gray">@Tesla</span>
+                    </div>
+                    <div class="col-2 mt-2 me-2 float-end">
+                        <button class="btn-primary override-bs2">Follow</button>
+                    </div>
+                </div>
+            </a>
+
+
+            <!-- <a href="#"
+            class="list-group-item list-group-item-action disabled"
+            tabindex="-1"
+            aria-disabled="true">Ender's Game</a> -->
+        </div><br />
+
+    </div>
+</body>
+
+</html>
+
+<!-- <div class="ytp-cued-thumbnail-overlay-image" style="background-image: url(&quot;https://i.ytimg.com/vi_webp/7CZTLogln34/maxresdefault.webp&quot;);"></div> -->

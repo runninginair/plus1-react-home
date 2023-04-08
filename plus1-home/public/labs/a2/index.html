@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <!-- <title>Title</title> -->
+   <title>A2 Lab</title>
+
+</head>
+<body>
+    <a name="top"></a>
+    <h1>HTML Examples</h1>
+
+    <h2>Table of content</h2>
+    <ul>
+        <li><a href="#embedding-website">Embedding other websites</a></li>
+        <li><a href="#embedding-youtube">Embedding YouTube</a></li>
+        <li><a href="#embedding-slides">EEmbedding Google slides</a></li>
+        <li><a href="#drawing-rectangles">Drawing rectangles</a></li>
+        <li><a href="#drawing-circles">Drawing circles</a></li>
+        <li><a href="#drawing-polygons">Drawing polygons</a></li>
+
+    </ul><br/>
+
+
+    <!-- 2.1 Heading Tags (5pts) -->
+    <div>
+   <h2>Heading Tags</h2>
+
+   Text documents are often broken up into several sections and subsections. Each section is usually prefaced with a short title or heading that attempts to summarize the topic of the section it precedes. For instance this paragraph is preceded by the heading Heading Tags. The font of the section headings are usually larger and bolder than their subsection headings. This document uses headings to introduce topics such as HTML Documents, HTML Tags, Heading Tags, etc. HTML heading tags can be used to format plain text so that it renders in a browser as large headings. There are 6 heading tags: h1, h2, h3, h4, h5, and h6. Tag h1 is the largest heading and h6 is the smallest heading.
+    </div><br/>
+
+    <!-- 2.2 Paragraph Tag (5pts) -->
+    <div>
+   <h2>Paragraph Tag</h2>
+        <p>
+        This is a paragraph. We often separate a long set of sentences with vertical spaces to make the text easier to read. Browsers ignore vertical white spaces and render all the text as one single set of sentences. To force the browser to add vertical spacing, wrap the paragraphs you want to separate with the paragraph tag
+        </p>
+        <p>
+        This is the first paragraph. The paragraph tag is used to format vertical gaps between long pieces of text like this one.
+        </p>
+        <p>
+        This is the second paragraph. Even though there is a deliberate white gap between the paragraph above and this paragraph, by default browsers render them as one contiguous piece of text as shown here on the right.
+        </p>
+        <p>
+        This is the third paragraph. Wrap each paragraph with the paragraph tag to tell browsers to render the gaps.
+        </p>
+    </div><br/>
+
+    <!-- 2.3 List Tags (10pts) -->
+    <div>
+        <h2>List Tags</h2>
+        <!-- 2.3.1 Ordered List Tag (5pts) -->
+        <div>
+        <h3>Ordered List Tag</h3>
+        How to join the 1%
+        <ol>
+            <li>Get a masters in computer science</li>
+            <li>Get a $100K+ starting salary job</li>
+            <li>Marry a like-minded engineer</li>
+            <li>Do great work for a decade</li>
+        </ol>
+        </div>
+
+        <!-- 2.3.2 Unordered List Tag (5pts) -->
+        <div>
+        <h3>Unordered List Tag</h3>
+        My favorite books (in no particular order)
+        <ul>
+        <li>Dune</li>
+            <li>Lord of the Rings</li>
+            <li>Ender's Game</li>
+            <li>Red Mars</li>
+            <li>The Forever War</li>
+        </ul>
+        </div>
+    </div><br/>
+
+    <!-- 2.4 Table Tags (5pts) -->
+    <div>
+        <!-- HTML table tag can be used to format the data with the following tags:
+            table - declares the start of a table
+            tr - declares the start of a row
+            td - declares a table data cell
+            thead - declares a row of headings
+            tbody - declares the main data content rows of the table
+            tfoot - declares a row as a footer
+            th - declares a table cell as a heading -->
+    <h2>Table Tag</h2>
+    <table border="1" width="100%">         <!-- declares the table, sets border and width -->
+        <thead>                             <!-- declares the table heading section -->
+        <tr>                                <!-- declares the headings row -->
+            <th>Quiz</th>                   <!-- declares heading for first column -->
+            <th>Topic</th>                  <!-- declares heading for second column -->
+            <th>Date</th>                   <!-- declares heading for third column -->
+            <th>Grade</th>                  <!-- declares heading for fourth column -->
+        </tr>
+        </thead>
+        <tbody>                             <!-- declares the table's main content -->
+        <tr>                                <!-- declares the first row -->
+            <td>Q1</td>                     <!-- declares data for first row, first column -->
+            <td>HTML</td>                   <!-- declares data for first row, second column -->
+            <td>2/3/21</td>                 <!-- declares data for first row, third column -->
+            <td>85</td>                     <!-- declares data for first row, fourth column -->
+        </tr>
+        <tr>                                <!-- declares the second row -->
+            <td>Q2</td>                     <!-- declares data for second row, first column -->
+            <td>CSS</td>                    <!-- declares data for second row, second column -->
+            <td>2/10/21</td>                <!-- declares data for second row, third column -->
+            <td>90</td>                     <!-- declares data for second row, foutth column -->
+        </tr>
+        <tr>                                <!-- declares the third row -->
+            <td>Q3</td>
+            <td>JavaScript</td>
+            <td>2/17/21</td>
+            <td>95</td>
+        </tr>
+        </tbody>
+        <tfoot>                             <!-- declares the table footer section -->
+        <tr>                                <!-- declares the footer row -->
+            <td colspan="3">Average</td>    <!-- declares data spans 3 columns -->
+            <td>90</td>                     <!-- declares data for fourth column -->
+        </tr>
+        </tfoot>
+    </table>
+    </div><br/>
+
+    <!-- 2.5 Image Tag (5pts) -->
+    <div>
+    <h2>Image tag</h2>
+
+    Loading an image from the internet:<br/>
+    <img width="400px"
+        src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
+    <br/>
+    
+    Loading a local image:<br/>
+    <img src="../../images/teslabot.jpg"
+        height="200px"/>
+    </div><br/>
+
+    <!-- 2.6 Form Tags (15pts) -->
+    <div>
+        <!-- 2.6.1 Text fields -->
+        <div>
+        <!--	use input tag's text type to declare a single line input field text is default
+        if type is left out. Use placeholder and title to give a hint of what information you're
+        expecting. Optionally initialize the value of the field with value attribute-->
+        <!-- <input  type="text"
+        placeholder="hint"
+        title="tooltip"
+        value="COMEDY"/> -->
+
+        <h2>Text fields</h2>
+        <form id="text-fields">
+            <label for="text-fields-username">Username:</label>
+            <input id="text-fields-username" placeholder="jdoe"/><br/>
+            <label for="text-fields-password">Password:</label>
+            <input type="password" id="text-fields-password"
+                    value="123@#$asd"/><br/>
+            <label for="text-fields-first-name">First name:</label>
+            <input type="text" id="text-fields-first-name"
+                    title="John"/><br/>
+            <label for="text-fields-last-name">Last name:</label>
+            <input type="text" id="text-fields-last-name"
+                    placeholder="Doe" value="Wonderland"/>
+            <!-- copy rest of form elements here -->
+        </form>
+        </div>
+
+        <!-- 2.6.2 Date, email, number, and range fields -->
+        <div>
+        <h2>Other field types</h2>
+        <label for="text-fields-email">
+        Email:
+        </label>
+        <input type="email"
+            placeholder="jdoe@somewhere.com"
+            id="text-fields-email"/><br/>
+        <label for="text-fields-salary-start">
+            Starting salary:
+        </label>
+        <input type="number"
+            id="text-fields-salary-start"
+            placeholder="1000"
+            value="100000"/><br/>
+        <label for="text-fields-rating">
+            Rating:
+        </label>
+        <input type="range" id="text-fields-rating"
+            placeholder="Doe"
+            max="5"
+            value="4"/><br/>
+        <label for="text-fields-dob">
+            Date of birth:
+        </label>
+        <input type="date"
+            id="text-fields-dob"
+            value="2000-01-21"/><br/>
+        </div>
+
+        <!-- 2.6.3 Text boxes (2pt) -->
+        <div>
+        <!--	use textarea tag for long form text configure its width and height with
+            attributes cols and rows. Use placeholder and tooltip to give hints. 
+            Note default value is in tag's body -->
+        <!-- <textarea cols="20"
+            rows="25"
+            placeholder="Biography"
+            title="tooltip">Some text
+        </textarea> -->
+        <h2>Text boxes</h2>
+        <form id="textarea">
+            <label>Biography:</label><br/>
+            <textarea cols="30" rows="10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+        </form></div>
+
+        <!-- 2.6.4 Buttons (1pts) -->
+        <div>
+        <h3>Buttons</h3>
+        <button>Click me!</button>
+        </div>
+        
+        <!-- 2.6.5 Dropdowns (3pts) -->
+        <div>
+        <!--	Wrap several option tags in a select tag. Optionally provide option's value, otherwise
+            the option's text is the value of the select element. Optionally use selected attribute to
+            select default.	-->
+        <!-- <select>
+            <option value="VAL1">Value 1</option>
+            <option value="VAL2" selected>
+                Value 2</option>
+            <option value="VAL3">Value 3</option>
+        </select> -->
+
+        <!--	Alternatively use attribute multiple to allow selecting more than one option.
+            Use ctrl+click to select more than one option -->
+        <!-- <select multiple>
+            <option value="VAL1" selected>Value 1</option>
+            <option value="VAL2">Value 2</option>
+            <option value="VAL3" selected>Value 3</option>
+        </select> -->
+
+        <h2>Dropdowns</h2>
+
+        <h3>Select one</h3>
+        <label for="select-one-genre">
+            Favorite movie genre:
+        </label><br/>
+        <select id="select-one-genre">
+            <option value="COMEDY">Comedy</option>
+            <option value="DRAMA">Drama</option>
+            <option selected value="SCIFI">
+                Science Fiction</option>
+            <option value="FANTASY">Fantasy</option>
+        </select>
+        
+        <h3>Select many</h3>
+        <label for="select-many-genre">
+            Favorite movie genres:
+        </label><br/>
+        <select id="select-many-genre" multiple>
+            <option selected value="COMEDY">Comedy</option>
+            <option value="DRAMA">Drama</option>
+            <option selected value="SCIFI">
+                Science Fiction</option>
+            <option value="FANTASY">Fantasy</option>
+        </select>
+        </div>
+
+        <!-- 2.6.6 File upload button (1pts) -->
+        <div>
+        <h2>File upload</h2>
+        <input type="file"/>
+        </div>
+
+        <!-- 2.6.7 Radio buttons (2pts) -->
+        <div>
+        <!--	use the input tag's checkbox type to declare a checkbox give the checkbox a value	-->
+        <!-- <input type="radio"
+            name="NAME1"
+            value="OPTION1"/>
+        <input type="radio" checked
+            name="NAME1"
+            value="OPTION2"/> -->
+
+        <h2>Radio buttons</h2>
+
+        <label>Favorite movie genre:</label><br/>
+            
+        <input type="radio" value="COMEDY"
+            name="radio-genre" id="radio-comedy"/>
+        <label for="radio-comedy">Comedy</label><br/>
+        <input type="radio" value="DRAMA"
+            name="radio-genre" id="radio-drama"/>
+        <label for="radio-drama">Drama</label><br/>
+        <input type="radio" value="SCIFI"
+            name="radio-genre" id="radio-scifi" checked/>
+        <label for="radio-scifi">Science Fiction</label><br/>
+        <input type="radio" value="FANTASY"
+            name="radio-genre" id="radio-fantasy"/>
+        <label for="radio-fantasy">Fantasy</label>
+        </div>
+
+        <!-- 2.6.8 Checkboxes (2pts) -->
+        <div>
+        <h2>Checkboxes</h2>
+        <label>Favorite movie genre:</label>
+        <br/>
+        <input type="checkbox" value="COMEDY"
+            name="check-genre" id="chkbox-comedy" checked/>
+        <label for="chkbox-comedy">Comedy</label>    <br/>
+        <input type="checkbox" value="DRAMA"
+            name="check-genre" id="chkbox-drama"/>
+        <label for="chkbox-drama">Drama</label>    <br/>
+        <input type="checkbox" value="SCIFI"
+            name="check-genre" id="chkbox-scifi" checked/>
+        <label for="chkbox-scifi">Science Fiction</label> <br/>
+        <input type="checkbox" value="FANTASY"
+            name="check-genre" id="chkbox-fantasy"/>
+        <label for="chkbox-fantasy">Fantasy</label>
+        </div>
+    </div><r/>
+
+    <!-- 2.7 Anchor Tag (5pts) -->
+    <div>
+    <!--	Use the href attribute to refer to the location of the website or
+        other page in the same website. Click on the body text to navigate -->
+
+        <h2>Anchor tag</h2>
+
+        Please
+        <a href="https://www.lipsum.com">click here</a>
+        to get dummy text<br/>
+
+        Checkout my <a href="other-page.html">other page</a>
+    </div><br/>
+
+
+    <!-- 4.1 Iframes (20pts) -->
+
+    <!-- 4.1.1 Embedding other Web sites (6pts) -->
+    <div>
+    <!--	width and height attributes configure the size of the rectangle we
+        want to dedicate to the other Web site. the src attribute points to the
+        location of the other Web site -->
+        <a name="embedding-website"></a>
+        <h2>Embedding other websites</h2>
+        <a href="#top">Top</a><br/>
+        <iframe width="600"
+                height="400"
+                src="https://en.wikipedia.org/wiki/SpaceX">
+        </iframe>
+    </div><br/>
+
+    <!-- 4.1.2 Embedding a YouTube video (7pts) -->
+    <div>
+        <a name="embedding-youtube"></a>
+        <h2>Embedding YouTube</h2>
+        <a href="#top">Top</a><br/>
+        <iframe width="560"
+                height="315"
+                src="https://www.youtube.com/embed/7CZTLogln34"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+    </div><br/>
+
+    <!-- 4.1.3 Embedding Google slides (7pts) -->
+    <div>
+        <a name="embedding-slides"></a>
+        <h2>Embedding Google slides</h2>
+        <a href="#top">Top</a><br/>
+        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQoIYM2gXzRLKt4q5D2-ZahG7zvVcAipkRvj5k9GVLiGDs8NPlLpO3Q08cPUKQbqhL6g8aZp1ZJSwrw/embed?start=false&loop=false&delayms=3000"
+                frameborder="0"
+                width="680"
+                height="418"
+                allowfullscreen="true"
+                mozallowfullscreen="true"
+                webkitallowfullscreen="true">
+        </iframe>
+    </div><br/>
+
+
+    <!-- 4.2 Scalable vector graphics (SVG) (20pts) -->
+
+    <!-- The svg tag allows declaring a rectangle where we can draw shapes on the screen.
+        The svg tag can contain shape tags such as rect, circle and polygon to draw anything
+        we want. Here's an example syntax of the svg, rect, and circle tags. -->
+
+    <!--	svg declares a rectangular area where we can draw width and height
+        attributes configure the size of the area. rect tag declares a rectangular
+        area to draw a rectangle. width and height attributes declare size of rectangle.
+        style attribute declares border and fill colors and border width circle tag
+        declares a rectangular area to draw a circle. cx and cy attributes declares
+        the center position. r attribute declares the radius of the circle. stroke
+        declares the color to draw with. stroke-width declares the size of the border.
+        fill declares color to fill the circle -->
+
+    <!-- <svg width="300"
+        height="100">
+        <rect  width="300"
+                height="100"
+                style="fill:rgb(0,0,255);
+                    stroke:rgb(0,0,0);
+                    stroke-width:10;" />
+        <circle cx="50" cy="50"
+                r="40"
+                stroke="green"
+                stroke-width="4"
+                fill="yellow" />
+    </svg> -->
+
+    <!-- 4.2.1 Drawing rectangles (6pts) -->
+    <div>
+    <a name="drawing-rectangles"></a>
+    <h2>Drawing rectangles</h2>
+    <a href="#top">Top</a><br/>
+
+    <svg width="300" height="100">
+        <rect width="300" height="100"
+            style="fill:rgb(98, 208, 109); stroke-width:50; stroke:rgb(132, 242, 190)"/>
+    </svg>
+    </div><br/>
+
+    <!-- 4.2.2 Drawing circles (7pts) -->
+    <div>
+        <a name="drawing-circles"></a>
+        <h2>Drawing circles</h2>
+        <a href="#top">Top</a><br/>
+
+        <svg width="200" height="100">
+            <circle cx="100" cy="50" r="40"
+            stroke="purple" stroke-width="20" fill="gray" />
+        </svg>
+    </div><br/>
+
+    <!-- 4.2.3 Drawing polygons (7pts) -->
+    <div>
+        <a name="drawing-polygons"></a>
+        <h2>Drawing polygons</h2>
+        <a href="#top">Top</a><br/>
+
+        <svg width="300" height="200">
+        <polygon points="125,10 40,198 190,78 10,78 160,198"
+                style="fill:royalblue; stroke:pink; stroke-width:5; fill-rule:evenodd;" />
+        </svg>
+    </div><br/><br/>
+
+
+    <!-- 4.3 Anchors (10pts) -->
+    <!-- We used anchor tags earlier in this assignment to link one Web page to another.
+        The href attribute in anchor tags allow referring other documents which we navigate to
+        when we click on the anchor. We can also reference sections in the same document so we
+        can navigate to different places in the document. To do this we use the name attribute
+        to declare places in the document we want to navigate to.
+        Here's the syntax for implementing this: -->
+
+    <!-- declaring a location on the page called table-of-content,
+        link to go to section-a, link to go to section-b -->
+    <!-- <a name="table-of-content"></a>            	    
+    <a href="#section-a">Go to section A</a>
+    <a href="#section-b">Go to section B</a> -->
+
+    <!-- declaring location on page called section-a actual content link to go to table-of-content -->
+    <!-- <a name="section-a"></a>
+    <h1>Section A</h1></a>
+    <a href="#table-of-content">Up</a> -->
+
+    <!-- declaring location on page called section-b actual content link to go to table-of-content -->
+    <!-- <a name="section-b"></a>
+    <h1>Section B</h1></a>
+    <a href="#table-of-content">Up</a> -->
+
+
+    <!-- 4.3.1 Table of content anchors -->
+
+    <!-- 
+    <a name="embedding-website"></a>
+    <h2>Embedding other websites</h2>
+    <a href="#top">Top</a><br/>
+    
+    <a name="embedding-youtube"></a>
+    <h2>Embedding YouTube</h2>
+    <a href="#top">Top</a><br/>
+    
+    <a name="embedding-slides"></a>
+    <h2>Embedding Google slides</h2>
+    <a href="#top">Top</a><br/>
+    -->
+
+</body>
+</html>
