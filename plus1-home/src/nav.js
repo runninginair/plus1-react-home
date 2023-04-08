@@ -10,9 +10,9 @@ function Nav() {
     return (
         <div>
             <Link to="/">Admin Login</Link> |
-            <Link to="/">User Login</Link> |
-            <Link to="/a7">Search Activities</Link> |
-            <Link to="/tuiter">Update user proflie</Link>
+            <Link to="/plus1">User Login</Link> |
+            {/* <Link to="/a7">Search Activities</Link> |
+            <Link to="/tuiter">Update user proflie</Link> */}
         </div>
     );
 }

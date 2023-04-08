@@ -1,6 +1,4 @@
 import React from 'react';
-// import { Link } from "react-router-dom";
-// import Nav from "../nav";
 import ExploreComponent from "./explore";
 import NavigationSidebar from './navigation-sidebar';
 import HomeComponent_a7 from './home';

@@ -3,15 +3,15 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialUser = {
     user: {
-        "firstName": "Novak",
-        "lastName": "Djokovic",
-        "handle": "@DjokerNole",
-        "profilePicture": "Novak_400x400.jpeg",
-        "bannerPicture": "ND_banner.jpeg",
-        "bio": "Serbian professional tennis player. Currently ranked world No.1 in men's singles by the Association of Tennis Professionals, and has held the top position for a record total 380 weeks, finishing as the year-end No.1 an Open Era record seven times.",
-        "website": "https://novakdjokovic.com/",
+        "firstName": "Firsname",
+        "lastName": "Lastname",
+        "handle": "@userHandler",
+        "profilePicture": "https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png",
+        "bannerPicture": "https://images.unsplash.com/photo-1614851099175-e5b30eb6f696?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJhbm5lcnxlbnwwfHwwfHw%3D&w=1000&q=80",
+        "bio": "Love Running, Tennis, Biking, Walking, Swimming",
+        "website": "https://mysportslife.com/",
         "location": "Seattle, WA",
-        "dateOfBirth": "May 22 1986",
+        "dateOfBirth": "May 22 1996",
         "dateJoined": "03/2011",
         "followingCount": 771,
         "followersCount": 9876,

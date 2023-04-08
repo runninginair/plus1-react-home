@@ -17,21 +17,20 @@ const ExploreComponent = () => {
             </div>
             <ul className="nav nav-pills mb-2">
                 <li className="nav-item">
-                    <a className="nav-link active">For You</a>
+                    <a className="nav-link active"> You Achivement </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">Trending</a>
+                    <a className="nav-link"> Your plan </a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link">News</a>
+                    <a className="nav-link"> Calculate Your Workout </a>
                 </li>
             </ul>
-            <div className="position-relative mb-2">
-                <img src="/images/Starship-Mk1-Day.jpg" className="w-100" alt='' />
-                <h1 className="position-absolute wd-nudge-up text-white">
-                    SpaceX Starship</h1>
+            <div className="mb-2">
+                <h1 className="wd-nudge-up text-green">
+                    Workout Search</h1>
             </div>
-            <PostSummaryList />
+            {/* <PostSummaryList /> */}
         </>
     );
 };

@@ -11,10 +11,13 @@ const NavigationSidebar = () => {
     return (
         <div className="list-group">
             <a className="list-group-item">
-                <h1 className="fw-bolder align-content-center">+1</h1>
-                <h1 className="text-danger fw-bolder align-content-center">PlusOne</h1>
-                <h3 className="text-primary">Workout</h3>
-                <span className="d-none d-xl-inline-block d-xxl-inline-block"> Track & Eval your Workout performance </span>
+                <h1 className="fw-bolder center">
+                    <span className="text-danger">+</span>
+                    <span>1</span>
+                    </h1>
+                <h1 className="d-none d-xl-inline-block d-xxl-inline-block text-danger fw-bolder align-content-center">PlusOne</h1>
+                <h3 className="d-none d-xl-inline-block d-xxl-inline-block text-primary ms-4">Workout</h3>
+                <span className="d-none d-xl-inline-block d-xxl-inline-block"> Track & Eval Your Workout Performance </span>
                 &nbsp;
             </a>
             <Link to="home" className={`list-group-item ${active === 'home' ? 'active' : ''}`}>
@@ -42,7 +45,7 @@ const NavigationSidebar = () => {
                 <span className="d-none d-xl-inline-block d-xxl-inline-block"> Lists </span>
             </Link>
 
-            <Link to="/tuiter/profile" className={`list-group-item 
+            <Link to="profile" className={`list-group-item 
                 ${(active === ('profile' || 'edit-profile'))? 'active' : ''}`}>
                 <i className="bi bi-person-lines-fill"></i> &nbsp;
                 <span className="d-none d-xl-inline-block d-xxl-inline-block"> Profile </span>

@@ -9,22 +9,28 @@ import { useSelector } from "react-redux";
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     // const { user } = useSelector((state) => state.user);
+    let [howManyCalories, setHowManyCalories] = useState('');
+    let [howManyMiles, setHowManyMiles] = useState('');
+
+    const image_src = "https://w7.pngwing.com/pngs/129/292/png-transparent-female-avatar-girl-face-woman-user-flat-classy-users-icon.png";
     const dispatch = useDispatch();                         // retrieve dispatch function with hook
     const tuitClickHandler = () => {
         console.log(whatsHappening);
         const newTuit = {                                   // create new tuit
             tuit: whatsHappening,                            // with text typed in textarea
-            username: "Novak Djokovic",
-            image: "https://pbs.twimg.com/profile_images/1219965365226065920/EBF8Rd9v_400x400.jpg",
-            handle: "@novak_djokovic",
+            username: "Firstname Lastname",
+            image: image_src,
+            handle: "@myhandler",
             time: "1min",
-            title: "Tennis",
-            topic: "ATP Tennis",
+            title: "Running",
+            topic: "Workout",
             liked: false,
             likes: 0,
             dislikes: 0,
             replies: 0,
-            retuits: 0
+            retuits: 0, 
+            calories: howManyCalories,
+            distance: howManyMiles,
         }
 
         // dispatch(createTuit(newTuit));                      // send tuit as action payload
@@ -34,20 +40,30 @@ const WhatsHappening = () => {
     return (
         <div className="row">
             <div className="col-auto">
-                {/* <img className="rounded-circle" height={48} src={`/images/${user.profilePicture}`} /> */}
-                <img className="rounded-circle" height={48}
-                    src={'https://pbs.twimg.com/profile_images/1219965365226065920/EBF8Rd9v_400x400.jpg'} />
+                <img className="rounded-circle" height={78}
+                    src={image_src} />
             </div>
 
             <div className="col-10">
-                <textarea value={whatsHappening} placeholder="What's happening?"
+                <textarea value={whatsHappening} placeholder="What's activity would you add? (Walking / Running / Cycling / Swimming / Other)"
                     className="form-control border-0"
                     onChange={(event) => setWhatsHappening(event.target.value)}>
                 </textarea>
+
+                <textarea value={howManyCalories} placeholder="How many calories did you spend?"
+                    className="form-control border-0"
+                    onChange={(event) => setHowManyCalories(event.target.value)}>
+                </textarea>
+
+                <textarea value={howManyMiles} placeholder="How many miles did you conquer?"
+                    className="form-control border-0"
+                    onChange={(event) => setHowManyMiles(event.target.value)}>
+                </textarea>
+
                 <div>
                     <button className="rounded-pill btn btn-primary float-end mt-2 ps-3 pe-3 fw-bold"
                         onClick={tuitClickHandler}>
-                        Tuit
+                        Add New Activitiy
                     </button>
                     <div className="text-primary fs-2">
                         <i className="bi bi-card-image me-3"></i>
