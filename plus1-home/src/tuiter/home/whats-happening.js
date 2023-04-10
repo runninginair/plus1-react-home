@@ -45,17 +45,20 @@ const WhatsHappening = () => {
             </div>
 
             <div className="col-10">
-                <textarea value={whatsHappening} placeholder="What's activity would you add? (Walking / Running / Cycling / Swimming / Other)"
+                <textarea value={whatsHappening}
+                    placeholder="What's activity would you add? (Walking / Running / Cycling / Swimming / Other)"
                     className="form-control border-0"
                     onChange={(event) => setWhatsHappening(event.target.value)}>
                 </textarea>
 
-                <textarea value={howManyCalories} placeholder="How many calories did you spend?"
+                <textarea value={howManyCalories}
+                    placeholder="How many calories did you spend?"
                     className="form-control border-0"
                     onChange={(event) => setHowManyCalories(event.target.value)}>
                 </textarea>
 
-                <textarea value={howManyMiles} placeholder="How many miles did you conquer?"
+                <textarea value={howManyMiles}
+                    placeholder="How many miles did you conquer?"
                     className="form-control border-0"
                     onChange={(event) => setHowManyMiles(event.target.value)}>
                 </textarea>

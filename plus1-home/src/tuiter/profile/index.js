@@ -52,6 +52,17 @@ const ProfileComponent = () => {
                 </div>
 
                 <div className="row text-secondary mb-3">
+
+                    <div className="col-auto">
+                        <i className="bi bi-emoji-wink-fill"></i>&nbsp;
+                        Weight: 180 bls {profile.weight}
+                    </div>
+
+                    <div className="col-auto">
+                        <i className="bi bi-rulers"></i>&nbsp;
+                        Height: 5'10 {profile.weight}
+                    </div>
+
                     <div className="col-auto">
                         <i className="bi bi-geo-alt"></i>&nbsp;
                         {profile.location}

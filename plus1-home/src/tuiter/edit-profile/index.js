@@ -25,19 +25,39 @@ const EditProfile = () => {
                 <h4 className="col-9 mt-2 ms-2">Edit Profile</h4>
                 <button
                     onClick={handleSaveButton}
-                    className="col btn btn-dark rounded-5 float-end me-4">                    
+                    className="col btn btn-success rounded-5 float-end me-4">
                     Save
                 </button>
             </div>
 
-            <div className="mb-5">
+            {/* <div className="mb-5">
                 <img className="img-fluid mt-2"
                     src={`/images/${profile.bannerPicture}`} alt='Banner Image' /><br />
                 <img width={120} className="rounded-circle ms-3 wd-profile-avatar-style"
                     src={`/images/${profile.profilePicture}`} alt='Profile Image' />
-            </div>
+            </div> */}
 
             <div className="input-group ms-3 me-3 mb-5">
+
+                <div className="input-group-addon wd-input-style">
+                    <label className="wd-input-title-style text-secondary">Your Weight</label>
+                    <input className="wd-input-box-style" type="text" size={68}
+                        title="Enter your body weight here" value={profile.weight}
+                        onChange={(e) => setProfile({
+                            ...profile,
+                            weight: e.target.value,
+                        })} /><br /><br />
+                </div>
+
+                <div className="input-group-addon wd-input-style">
+                    <label className="wd-input-title-style text-secondary">Your Height</label>
+                    <input className="wd-input-box-style" type="text" size={68}
+                        title="Enter your Height here" value={profile.height}
+                        onChange={(e) => setProfile({
+                            ...profile,
+                            height: e.target.value,
+                        })} /><br /><br />
+                </div>
 
                 <div className="input-group-addon wd-input-style">
                     <label className="wd-input-title-style text-secondary">First Name</label>
@@ -61,7 +81,7 @@ const EditProfile = () => {
 
                 <div className="input-group-addon wd-input-style">
                     <label className="wd-input-title-style text-secondary">Bio</label>
-                    <textarea className="wd-input-box-style" type="text" cols={67} rows={5}
+                    <textarea className="wd-input-box-style" type="text" cols={67} rows={3}
                         title="Enter your bio here" value={profile.bio}
                         onChange={(e) => setProfile({
                             ...profile,
@@ -87,9 +107,9 @@ const EditProfile = () => {
                             ...profile,
                             website: e.target.value,
                         })} /><br /><br />
-                </div>
+                </div>&nbsp;&nbsp;&nbsp;
 
-                <div className="input-group-addon">
+                <div className="ms-4 input-group-addon">
                     <label>Birth date</label> • <span className="text-primary">Edit</span> <br />
                     <input
                         type={DataView}
@@ -103,10 +123,11 @@ const EditProfile = () => {
                 </div>
             </div>
 
-            <div className="fs-4">
+            {/* <div className="fs-4">
                 <i className="bi bi-chevron-right float-end"></i>
                 <span className="ms-3">Switch to professional</span>
-            </div><br /><br /><br />
+            </div> */}
+            <br /><br /><br />
         </>
     );
 };

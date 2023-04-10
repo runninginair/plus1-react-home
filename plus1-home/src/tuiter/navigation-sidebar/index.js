@@ -13,9 +13,11 @@ const NavigationSidebar = () => {
             <a className="list-group-item">
                 <h1 className="fw-bolder center">
                     <span className="text-danger">+</span>
-                    <span>1</span>
+                    <span>1</span><i class="bi bi-badge-tm fs-6"></i>
                     </h1>
-                <h1 className="d-none d-xl-inline-block d-xxl-inline-block text-danger fw-bolder align-content-center">PlusOne</h1>
+                <h1 className="d-none d-xl-inline-block d-xxl-inline-block text-danger fw-bolder align-content-center">
+                    PlusOne
+                </h1>
                 <h3 className="d-none d-xl-inline-block d-xxl-inline-block text-primary ms-4">Workout</h3>
                 <span className="d-none d-xl-inline-block d-xxl-inline-block"> Track & Eval Your Workout Performance </span>
                 &nbsp;
