@@ -13,7 +13,7 @@ const NavigationSidebar = () => {
             <a className="list-group-item">
                 <h1 className="fw-bolder center">
                     <span className="text-danger">+</span>
-                    <span>1</span><i class="bi bi-badge-tm fs-6"></i>
+                    <span>1</span><i className="bi bi-badge-tm fs-6"></i>
                     </h1>
                 <h1 className="d-none d-xl-inline-block d-xxl-inline-block text-danger fw-bolder align-content-center">
                     PlusOne
