@@ -1,13 +1,9 @@
 import React from 'react';
-// import Labs from './labs';
-// import HelloWorld from './labs/a6/hello-world';
-import Tuiter from './tuiter';
+import Activitiy from './activity';
 import { BrowserRouter, Link } from 'react-router-dom';
 import { Routes, Route } from 'react-router';
-// import ProfileScreenDemo from './screens/profile-demo/profile-screen-demo';
 import { Provider } from 'react-redux';
-import store from './tuiter/data/store';
-// import HomScreenDemo from './screens/profile-demo/home-screen';
+import store from './activity/data/store';
 import './App.css';
 
 function App() {
@@ -15,11 +11,8 @@ function App() {
     <Provider store={store}>
       <BrowserRouter>
         <div className="container">
-
           <Routes>
-
-            <Route path="/plus1/*" element={<Tuiter />} />
-
+            <Route path="/plus1/*" element={<Activitiy />} />
           </Routes>
         </div>
       </BrowserRouter>
